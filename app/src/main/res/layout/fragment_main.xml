@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="72dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="La Trinidad"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/categoryCoffeeShops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#E9DCDC"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="59dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Coffee Shops Logo"
+                android:src="@drawable/l2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:text="Coffee Shops"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/categoryFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#E9DCDC"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="59dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Food Logo"
+                android:src="@drawable/l3" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:text="Food"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/categoryTouristSpots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#E9DCDC"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="59dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Tourist Spots Logo"
+                android:src="@drawable/l1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:text="Tourist Spots"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

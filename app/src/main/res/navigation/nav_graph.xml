@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mycityapp.MainFragment"
+        android:label="Main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_coffeeShopsFragment"
+            app:destination="@id/coffeeShopsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_foodFragment"
+            app:destination="@id/foodFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_touristSpotFragment"
+            app:destination="@id/touristSpotFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/coffeeShopsFragment"
+        android:name="com.example.mycityapp.CoffeeShopsFragment"
+        android:label="Coffee Shops"
+        tools:layout="@layout/fragment_coffee_shops">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.mycityapp.FoodFragment"
+        android:label="Food"
+        tools:layout="@layout/fragment_food"> <!-- Added missing tools:layout -->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/touristSpotFragment"
+        android:name="com.example.mycityapp.TouristSpotFragment"
+        android:label="Tourist Spots"
+        tools:layout="@layout/fragment_tourist_spot">
+
+    </fragment>
+</navigation>
